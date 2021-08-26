@@ -69,10 +69,18 @@ if(pets > friendsPets){
 else if (friendsPets > pets) {
   mostPets = friendsPets;
 } //end firends pets more than pets;
-else(pets == friendsPets) {
+else {
   mostPets = pets;
 } //end pets equals friendsPets
 console.log('The person with the most pets has ' + mostPets + ' pets!');
 // 17 - Rewrite question 16 with a `switch` statement. You'll need to do research!
+switch (pets >= friendsPets) {
+  case true:
+    mostPets = pets;
+    break; // when pets is greater than or equal to friendsPets assigns pets to mostPets
+  default:
+    mostPets = friendsPets;
+} // when friendsPets is greater than pets, assigns friendsPets to mostPets
+console.log('The person with the most pets has ' + mostPets + ' pets!');
 
 // 18 -- Rewrite question 13 with a `ternary` operator. You'll need to do research!
