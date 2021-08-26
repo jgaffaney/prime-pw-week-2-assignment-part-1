@@ -62,7 +62,20 @@ else {
 // assigns the highest value to `mostPets`. There's several possibilities --
 // be sure to think through all the scenarios.
 // console.log `mostPets` after the conditional has run.
-
+let mostPets = 0;
+if(pets > friendsPets){
+  mostPets = pets;
+} //end pets greater than friendsPets
+else if (friendsPets > pets) {
+  mostPets = friendsPets;
+} //end firends pets more than pets;
+else if(pets == friendsPets) {
+  mostPets = pets;
+} //end pets equals friendsPets
+else{
+  mostPets = 'There was an error in someone\'s number of pets'
+} //end unforseen comparisons
+console.log('The person with the most pets has ' + mostPets + ' pets!');
 // 17 - Rewrite question 16 with a `switch` statement. You'll need to do research!
 
 // 18 -- Rewrite question 13 with a `ternary` operator. You'll need to do research!
