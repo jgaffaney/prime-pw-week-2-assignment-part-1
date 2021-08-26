@@ -69,12 +69,9 @@ if(pets > friendsPets){
 else if (friendsPets > pets) {
   mostPets = friendsPets;
 } //end firends pets more than pets;
-else if(pets == friendsPets) {
+else(pets == friendsPets) {
   mostPets = pets;
 } //end pets equals friendsPets
-else{
-  mostPets = 'There was an error in someone\'s number of pets'
-} //end unforseen comparisons
 console.log('The person with the most pets has ' + mostPets + ' pets!');
 // 17 - Rewrite question 16 with a `switch` statement. You'll need to do research!
 
