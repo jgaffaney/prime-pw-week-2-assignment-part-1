@@ -21,7 +21,7 @@ let food = 'spaghetti';
 // 9 - Create a variable called `pets` and set it to the value of the number of pets you have
 let pets = 0;
 // 10 - Create a variable called `friendsPets` and assign it the value of the number of pets your friend has
-let friendsPets = 1;
+let friendsPets = 2;
 // 11 - Add two pets to your `pets` variable
 pets += 2;
 // 12 - Create a constant variable called `allowedPets` and set it to a number value of your choice
@@ -65,14 +65,14 @@ else {
 let mostPets = 0;
 if(pets > friendsPets){
   mostPets = pets;
-} //end pets greater than friendsPets
+} //end pets greater than friendsPets;
 else if (friendsPets > pets) {
   mostPets = friendsPets;
 } //end firends pets more than pets;
 else {
   mostPets = pets;
 } //end pets equals friendsPets
-console.log('The person with the most pets has ' + mostPets + ' pets!');
+console.log(mostPets);
 // 17 - Rewrite question 16 with a `switch` statement. You'll need to do research!
 switch (pets >= friendsPets) {
   case true:
@@ -81,6 +81,8 @@ switch (pets >= friendsPets) {
   default:
     mostPets = friendsPets;
 } // when friendsPets is greater than pets, assigns friendsPets to mostPets
-console.log('The person with the most pets has ' + mostPets + ' pets!');
+console.log(mostPets);
 
 // 18 -- Rewrite question 13 with a `ternary` operator. You'll need to do research!
+pets >= friendsPets ? mostPets = pets : mostPets = friendsPets;
+console.log(mostPets);
